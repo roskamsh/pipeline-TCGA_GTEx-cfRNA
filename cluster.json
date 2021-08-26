@@ -1,0 +1,45 @@
+{
+    "__default__" :
+    {
+        "t" : "36:00:00",
+        "N" : 1,
+        "partition" : "exacloud",
+        "J" : "{rule}.{wildcards}",
+        "o" : "logs/{rule}/{wildcards}_{rule}%j.out",
+        "e" : "logs/{rule}/{wildcards}_{rule}%j.err",
+        "c" : 24,
+        "mem" : 45000
+    },
+    "deseq" :
+    {
+        "J" : "deseq",
+        "e" : "logs/deseq/deseq%j.err",
+        "o" : "logs/deseq/deseq%j.out",
+        "c" : 24,
+        "mem" : 45000
+    },
+    "deseq_plots" :
+    {
+        "J" : "deseq_plots",
+        "e" : "logs/deseq_plots/deseq_plots%j.err",
+        "o" : "logs/deseq_plots/deseq_plots%j.out",
+        "c" : 6,
+        "mem" : 5000
+    },
+    "deseq_normd_init" :
+    {
+        "J" : "deseq_normd_init",
+        "e" : "logs/deseq_normd_init/deseq_normd_init%j.err",
+        "o" : "logs/deseq_normd_init/deseq_normd_init%j.out",
+        "c" : 20,
+        "mem" : 45000
+    },
+    "deseq_normd" :
+    {
+        "J" : "deseq_normd",
+        "e" : "logs/deseq_normd/deseq_normd%j.err",
+        "o" : "logs/deseq_normd/deseq_normd%j.out",
+        "c" : 2,
+        "mem" : 45000
+    }
+}
